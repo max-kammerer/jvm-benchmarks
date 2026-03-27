@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 @Warmup(iterations = 3, time = 3)
 @Measurement(iterations = 5, time = 5)
 @Fork(1)
+//NOTE: single threaded
 public class VarHandleOpaqueBenchmark {
 
     @Benchmark

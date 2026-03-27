@@ -5,6 +5,7 @@ import org.openjdk.jmh.annotations.State;
 
 import java.lang.invoke.MethodHandles;
 import java.lang.invoke.VarHandle;
+import java.lang.reflect.Field;
 
 @State(Scope.Benchmark)
 public class Data {
@@ -17,6 +18,8 @@ public class Data {
         try {
             staticFinalHandle = createVarHandle();
             staticHandle = createVarHandle();
+            staticFinalRef = createReflectionField();
+            staticRef = createReflectionField();
         } catch (IllegalAccessException | NoSuchFieldException e) {
             throw new RuntimeException(e);
         }
@@ -24,6 +27,16 @@ public class Data {
 
     public final VarHandle instanceFinal;
     public VarHandle instance;
+
+    public final static Field staticFinalRef;
+
+    public static Field staticRef;
+
+
+    public final Field instanceFinalRef;
+    public Field instanceRef;
+
+
     public MyClass data;
     public String newValue = "123";
 
@@ -31,6 +44,8 @@ public class Data {
         try {
             instance = createVarHandle();
             instanceFinal = createVarHandle();
+            instanceFinalRef = createReflectionField();
+            instanceRef = createReflectionField();
         } catch (IllegalAccessException | NoSuchFieldException e) {
             throw new RuntimeException(e);
         }
@@ -41,5 +56,9 @@ public class Data {
     public static VarHandle createVarHandle() throws IllegalAccessException, NoSuchFieldException {
         MethodHandles.Lookup lookup = MethodHandles.privateLookupIn(MyClass.class, MethodHandles.lookup());
         return lookup.findVarHandle(MyClass.class, "data", String.class);
+    }
+
+    public static Field createReflectionField() throws IllegalAccessException, NoSuchFieldException {
+        return MyClass.class.getDeclaredField("data");
     }
 }

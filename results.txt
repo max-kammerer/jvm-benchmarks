@@ -26,3 +26,20 @@ VarHandleOpaqueBenchmark.setStaticFinalHandle    thrpt    5  1840019,934 ±   36
 VarHandleOpaqueBenchmark.setStaticHandle         thrpt    5   320492,779 ±  30438,489  ops/ms
 VarHandleOpaqueBenchmark.setInstanceFinalHandle  thrpt    5   302179,263 ±   1926,385  ops/ms
 VarHandleOpaqueBenchmark.setInstanceHandle       thrpt    5   296989,452 ±   1038,710  ops/ms
+
+
+Benchmark                                        Mode  Cnt        Score        Error   Units
+ReflectionBenchmark.directFieldAccess           thrpt    5  2858789,960 ±  94531,682  ops/ms
+ReflectionBenchmark.staticFinalReflection       thrpt    5  1467783,863 ±   4034,416  ops/ms
+ReflectionBenchmark.staticReflection            thrpt    5   346496,156 ±  23861,441  ops/ms
+ReflectionBenchmark.instanceFinalReflection     thrpt    5   350884,063 ±  27666,994  ops/ms
+ReflectionBenchmark.instanceReflection          thrpt    5   327787,552 ±   2354,265  ops/ms
+
+ReflectionBenchmark.setDirectFieldAccess        thrpt    5  1914887,440 ±  21599,662  ops/ms
+ReflectionBenchmark.setStaticFinalReflection    thrpt    5  1168176,939 ± 158930,296  ops/ms
+ReflectionBenchmark.setStaticReflection         thrpt    5   256010,818 ±  41725,725  ops/ms
+ReflectionBenchmark.setInstanceFinalReflection  thrpt    5   242472,711 ±    474,141  ops/ms
+ReflectionBenchmark.setInstanceReflection       thrpt    5   246697,023 ±  24100,296  ops/ms
+
+
+Jackson, XStream, Kryo
