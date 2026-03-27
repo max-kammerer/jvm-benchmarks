@@ -1,0 +1,28 @@
+Results of VarHandleBenchmark:
+Benchmark                                  Mode  Cnt        Score         Error   Units
+VarHandleBenchmark.directFieldAccess       thrpt    5  2809665,185 ± 304358,786  ops/ms
+VarHandleBenchmark.staticFinalHandle       thrpt    5  2766609,338 ± 305200,918  ops/ms
+VarHandleBenchmark.staticHandle            thrpt    5   396513,351 ±   2064,264  ops/ms
+VarHandleBenchmark.instanceFinalHandle     thrpt    5   397868,604 ±   7164,291  ops/ms
+VarHandleBenchmark.instanceHandle          thrpt    5   390120,896 ±  41473,979  ops/ms
+
+VarHandleBenchmark.setDirectFieldAccess    thrpt    5  1981364,613 ±  42842,406  ops/ms
+VarHandleBenchmark.setStaticFinalHandle    thrpt    5  1776331,818 ±  60531,336  ops/ms
+VarHandleBenchmark.setStaticHandle         thrpt    5   337248,466 ±    966,866  ops/ms
+VarHandleBenchmark.setInstanceFinalHandle  thrpt    5   296981,292 ±    539,569  ops/ms
+VarHandleBenchmark.setInstanceHandle       thrpt    5   303739,201 ±  16608,264  ops/ms
+
+
+
+Benchmark                                         Mode  Cnt        Score        Error   Units
+VarHandleOpaqueBenchmark.directFieldAccess       thrpt    5  2811736,312 ± 155722,503  ops/ms
+VarHandleOpaqueBenchmark.staticFinalHandle       thrpt    5  2751819,000 ±  14167,769  ops/ms
+VarHandleOpaqueBenchmark.staticHandle            thrpt    5   369226,748 ±   1606,896  ops/ms
+VarHandleOpaqueBenchmark.instanceFinalHandle     thrpt    5   387079,152 ±  24753,178  ops/ms
+VarHandleOpaqueBenchmark.instanceHandle          thrpt    5   368060,305 ±   1802,646  ops/ms
+
+VarHandleOpaqueBenchmark.setDirectFieldAccess    thrpt    5  1825409,559 ± 117193,287  ops/ms
+VarHandleOpaqueBenchmark.setStaticFinalHandle    thrpt    5  1840019,934 ±   3628,059  ops/ms
+VarHandleOpaqueBenchmark.setStaticHandle         thrpt    5   320492,779 ±  30438,489  ops/ms
+VarHandleOpaqueBenchmark.setInstanceFinalHandle  thrpt    5   302179,263 ±   1926,385  ops/ms
+VarHandleOpaqueBenchmark.setInstanceHandle       thrpt    5   296989,452 ±   1038,710  ops/ms

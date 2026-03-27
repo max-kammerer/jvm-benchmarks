@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package benchmark.proto;
+
+option java_multiple_files = true;
+option java_package = "benchmark.proto";
+
+message User {
+  int64 id = 1;
+  string name = 2;
+  string email = 3;
+  int32 age = 4;
+  int64 created_at = 5;
+
+  // New nested structures to mirror Java's nested objects
+  message Address {
+    string city = 1;
+    string street = 2;
+    int32 house = 3;
+  }
+
+  message Company {
+    string name = 1;
+    string department = 2;
+  }
+
+  Address address = 6;
+  Company company = 7;
+}
