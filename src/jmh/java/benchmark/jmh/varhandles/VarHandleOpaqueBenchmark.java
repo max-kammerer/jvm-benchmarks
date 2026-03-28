@@ -2,16 +2,6 @@ package benchmark.jmh.varhandles;
 
 import org.openjdk.jmh.annotations.*;
 
-import java.lang.invoke.MethodHandles;
-import java.lang.invoke.VarHandle;
-import java.util.concurrent.TimeUnit;
-
-@BenchmarkMode(Mode.Throughput)
-@OutputTimeUnit(TimeUnit.MILLISECONDS)
-@Warmup(iterations = 3, time = 3)
-@Measurement(iterations = 5, time = 5)
-@Fork(1)
-//NOTE: single threaded
 public class VarHandleOpaqueBenchmark {
 
     @Benchmark
@@ -56,7 +46,7 @@ public class VarHandleOpaqueBenchmark {
 
     @Benchmark
     public void setInstanceHandle(Data data) {
-         data.instance.setOpaque(data.data, data.newValue);
+        data.instance.setOpaque(data.data, data.newValue);
     }
 
     @Benchmark

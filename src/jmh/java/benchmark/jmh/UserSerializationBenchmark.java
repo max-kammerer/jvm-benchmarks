@@ -2,19 +2,12 @@ package benchmark.jmh;
 
 import org.openjdk.jmh.annotations.*;
 
-import java.util.concurrent.TimeUnit;
-
 import benchmark.java.UserJava;
 import benchmark.proto.User;
 import one.nio.serial.Serializer;
 import org.openjdk.jmh.infra.Blackhole;
 
 
-@BenchmarkMode(Mode.Throughput)
-@OutputTimeUnit(TimeUnit.MILLISECONDS)
-@Warmup(iterations = 3, time = 3)
-@Measurement(iterations = 5, time = 5)
-@Fork(1)
 public class UserSerializationBenchmark {
 
     // ---------- serialize ----------

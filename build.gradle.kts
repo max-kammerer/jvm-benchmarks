@@ -25,7 +25,14 @@ sourceSets {
 }
 
 jmh {
-    includes = listOf(".*VarHandleBenchmark.*")
+    includes.set(listOf(".*Benchmark.*"))
+    warmupIterations.set(3)
+    warmup.set("3s")
+    iterations.set(5)
+    timeOnIteration.set("5s")
+    fork.set(1)
+    benchmarkMode.set(listOf("thrpt"))
+    timeUnit.set("ms")
 }
 
 dependencies {
