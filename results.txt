@@ -1,45 +1,46 @@
-Results of VarHandleBenchmark:
-Benchmark                                  Mode  Cnt        Score         Error   Units
-VarHandleBenchmark.directFieldAccess       thrpt    5  2809665,185 ± 304358,786  ops/ms
-VarHandleBenchmark.staticFinalHandle       thrpt    5  2766609,338 ± 305200,918  ops/ms
-VarHandleBenchmark.staticHandle            thrpt    5   396513,351 ±   2064,264  ops/ms
-VarHandleBenchmark.instanceFinalHandle     thrpt    5   397868,604 ±   7164,291  ops/ms
-VarHandleBenchmark.instanceHandle          thrpt    5   390120,896 ±  41473,979  ops/ms
+## JDK 21
 
-VarHandleBenchmark.setDirectFieldAccess    thrpt    5  1981364,613 ±  42842,406  ops/ms
-VarHandleBenchmark.setStaticFinalHandle    thrpt    5  1776331,818 ±  60531,336  ops/ms
-VarHandleBenchmark.setStaticHandle         thrpt    5   337248,466 ±    966,866  ops/ms
-VarHandleBenchmark.setInstanceFinalHandle  thrpt    5   296981,292 ±    539,569  ops/ms
-VarHandleBenchmark.setInstanceHandle       thrpt    5   303739,201 ±  16608,264  ops/ms
+Benchmark                                   Mode  Cnt        Score        Error   Units
+VarHandleBenchmark.directFieldAccess       thrpt    5  3528086,559 ±  28138,904  ops/ms
+VarHandleBenchmark.staticFinalHandle       thrpt    5  3514334,219 ± 301346,535  ops/ms
+VarHandleBenchmark.staticHandle            thrpt    5   410862,426 ±  15201,337  ops/ms
+VarHandleBenchmark.instanceFinalHandle     thrpt    5   422750,677 ±  62047,722  ops/ms
+VarHandleBenchmark.instanceHandle          thrpt    5   406005,986 ±  59816,078  ops/ms
 
-
-
-Benchmark                                         Mode  Cnt        Score        Error   Units
-VarHandleOpaqueBenchmark.directFieldAccess       thrpt    5  2811736,312 ± 155722,503  ops/ms
-VarHandleOpaqueBenchmark.staticFinalHandle       thrpt    5  2751819,000 ±  14167,769  ops/ms
-VarHandleOpaqueBenchmark.staticHandle            thrpt    5   369226,748 ±   1606,896  ops/ms
-VarHandleOpaqueBenchmark.instanceFinalHandle     thrpt    5   387079,152 ±  24753,178  ops/ms
-VarHandleOpaqueBenchmark.instanceHandle          thrpt    5   368060,305 ±   1802,646  ops/ms
-
-VarHandleOpaqueBenchmark.setDirectFieldAccess    thrpt    5  1825409,559 ± 117193,287  ops/ms
-VarHandleOpaqueBenchmark.setStaticFinalHandle    thrpt    5  1840019,934 ±   3628,059  ops/ms
-VarHandleOpaqueBenchmark.setStaticHandle         thrpt    5   320492,779 ±  30438,489  ops/ms
-VarHandleOpaqueBenchmark.setInstanceFinalHandle  thrpt    5   302179,263 ±   1926,385  ops/ms
-VarHandleOpaqueBenchmark.setInstanceHandle       thrpt    5   296989,452 ±   1038,710  ops/ms
+VarHandleBenchmark.setDirectFieldAccess    thrpt    5  2617504,849 ±  66853,452  ops/ms
+VarHandleBenchmark.setStaticFinalHandle    thrpt    5  2496861,984 ± 170460,563  ops/ms
+VarHandleBenchmark.setStaticHandle         thrpt    5   330172,466 ±  23698,169  ops/ms
+VarHandleBenchmark.setInstanceFinalHandle  thrpt    5   342716,107 ±   1083,555  ops/ms
+VarHandleBenchmark.setInstanceHandle       thrpt    5   335023,087 ±    667,010  ops/ms
 
 
 Benchmark                                        Mode  Cnt        Score        Error   Units
-ReflectionBenchmark.directFieldAccess           thrpt    5  2858789,960 ±  94531,682  ops/ms
-ReflectionBenchmark.staticFinalReflection       thrpt    5  1467783,863 ±   4034,416  ops/ms
-ReflectionBenchmark.staticReflection            thrpt    5   346496,156 ±  23861,441  ops/ms
-ReflectionBenchmark.instanceFinalReflection     thrpt    5   350884,063 ±  27666,994  ops/ms
-ReflectionBenchmark.instanceReflection          thrpt    5   327787,552 ±   2354,265  ops/ms
+ReflectionBenchmark.directFieldAccess           thrpt    5  3455030,925 ± 334784,159  ops/ms
+ReflectionBenchmark.staticFinalReflection       thrpt    5  1652825,858 ± 157957,068  ops/ms
+ReflectionBenchmark.staticReflection            thrpt    5   346108,787 ±   5973,253  ops/ms
+ReflectionBenchmark.instanceFinalReflection     thrpt    5   338279,765 ±  13517,872  ops/ms
+ReflectionBenchmark.instanceReflection          thrpt    5   339136,806 ±  16464,406  ops/ms
 
-ReflectionBenchmark.setDirectFieldAccess        thrpt    5  1914887,440 ±  21599,662  ops/ms
-ReflectionBenchmark.setStaticFinalReflection    thrpt    5  1168176,939 ± 158930,296  ops/ms
-ReflectionBenchmark.setStaticReflection         thrpt    5   256010,818 ±  41725,725  ops/ms
-ReflectionBenchmark.setInstanceFinalReflection  thrpt    5   242472,711 ±    474,141  ops/ms
-ReflectionBenchmark.setInstanceReflection       thrpt    5   246697,023 ±  24100,296  ops/ms
+ReflectionBenchmark.setDirectFieldAccess        thrpt    5  2465975,521 ±  81719,745  ops/ms
+ReflectionBenchmark.setStaticFinalReflection    thrpt    5  1295523,272 ±   7435,473  ops/ms
+ReflectionBenchmark.setInstanceFinalReflection  thrpt    5   265780,091 ±    841,819  ops/ms
+ReflectionBenchmark.setInstanceReflection       thrpt    5   273666,962 ±   1910,115  ops/ms
+ReflectionBenchmark.setStaticReflection         thrpt    5   265343,338 ±  39759,439  ops/ms
+
+
+## JDK 17
+
+ReflectionBenchmark.directFieldAccess           thrpt    5  3471983,242 ± 234377,540  ops/ms
+ReflectionBenchmark.staticFinalReflection       thrpt    5   594156,404 ±   2079,332  ops/ms
+ReflectionBenchmark.staticReflection            thrpt    5   531546,471 ±  43084,446  ops/ms
+ReflectionBenchmark.instanceFinalReflection     thrpt    5   479901,494 ±  26687,363  ops/ms
+ReflectionBenchmark.instanceReflection          thrpt    5   468899,655 ±   2332,012  ops/ms
+
+ReflectionBenchmark.setDirectFieldAccess        thrpt    5  2416219,886 ±  38275,467  ops/ms
+ReflectionBenchmark.setStaticFinalReflection    thrpt    5   446793,249 ±   4161,265  ops/ms
+ReflectionBenchmark.setStaticReflection         thrpt    5   415392,384 ±  34715,126  ops/ms
+ReflectionBenchmark.setInstanceFinalReflection  thrpt    5   425694,033 ±  38792,328  ops/ms
+ReflectionBenchmark.setInstanceReflection       thrpt    5   433123,019 ±   1419,264  ops/ms
 
 
 Jackson, XStream, Kryo

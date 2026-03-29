@@ -37,8 +37,8 @@ public class Data {
     public Field instanceRef;
 
 
-    public MyClass data;
     public String newValue = "123";
+    public String data = "oldvalue";
 
     public Data() {
         try {
@@ -49,16 +49,14 @@ public class Data {
         } catch (IllegalAccessException | NoSuchFieldException e) {
             throw new RuntimeException(e);
         }
-
-        data = new MyClass("123");
     }
 
     public static VarHandle createVarHandle() throws IllegalAccessException, NoSuchFieldException {
-        MethodHandles.Lookup lookup = MethodHandles.privateLookupIn(MyClass.class, MethodHandles.lookup());
-        return lookup.findVarHandle(MyClass.class, "data", String.class);
+        MethodHandles.Lookup lookup = MethodHandles.privateLookupIn(Data.class, MethodHandles.lookup());
+        return lookup.findVarHandle(Data.class, "data", String.class);
     }
 
     public static Field createReflectionField() throws IllegalAccessException, NoSuchFieldException {
-        return MyClass.class.getDeclaredField("data");
+        return Data.class.getDeclaredField("data");
     }
 }
