@@ -1,17 +1,18 @@
 ## JDK 21
 
 Benchmark                                   Mode  Cnt        Score        Error   Units
-VarHandleBenchmark.directFieldAccess       thrpt    5  3528086,559 ±  28138,904  ops/ms
-VarHandleBenchmark.staticFinalHandle       thrpt    5  3514334,219 ± 301346,535  ops/ms
-VarHandleBenchmark.staticHandle            thrpt    5   410862,426 ±  15201,337  ops/ms
-VarHandleBenchmark.instanceFinalHandle     thrpt    5   422750,677 ±  62047,722  ops/ms
-VarHandleBenchmark.instanceHandle          thrpt    5   406005,986 ±  59816,078  ops/ms
+VarHandleBenchmark.directFieldAccess       thrpt    5  3617924,052 ±  2448,367  ops/ms
+VarHandleBenchmark.staticFinalHandle       thrpt    5  3443090,480 ± 11581,308  ops/ms
+VarHandleBenchmark.staticHandle            thrpt    5   417151,953 ± 49809,902  ops/ms
+VarHandleBenchmark.instanceFinalHandle     thrpt    5   409420,604 ±  1967,118  ops/ms
+VarHandleBenchmark.instanceHandle          thrpt    5   409084,623 ±   971,381  ops/ms
 
-VarHandleBenchmark.setDirectFieldAccess    thrpt    5  2617504,849 ±  66853,452  ops/ms
-VarHandleBenchmark.setStaticFinalHandle    thrpt    5  2496861,984 ± 170460,563  ops/ms
-VarHandleBenchmark.setStaticHandle         thrpt    5   330172,466 ±  23698,169  ops/ms
-VarHandleBenchmark.setInstanceFinalHandle  thrpt    5   342716,107 ±   1083,555  ops/ms
-VarHandleBenchmark.setInstanceHandle       thrpt    5   335023,087 ±    667,010  ops/ms
+VarHandleBenchmark.setDirectFieldAccess    thrpt    5  2651811,183 ± 60822,851  ops/ms
+VarHandleBenchmark.setStaticFinalHandle    thrpt    5  2512558,444 ± 43324,807  ops/ms
+VarHandleBenchmark.setStaticHandle         thrpt    5   323009,402 ±  1323,075  ops/ms
+VarHandleBenchmark.setInstanceFinalHandle  thrpt    5   341266,600 ± 48086,362  ops/ms
+VarHandleBenchmark.setInstanceHandle       thrpt    5   350141,600 ±  1067,145  ops/ms
+
 
 
 Benchmark                                        Mode  Cnt        Score        Error   Units
