@@ -122,11 +122,6 @@ public class UserSerializationBenchmark {
 
         @Setup
         public void setup() throws Exception {
-//            MyStringSerializer serializer =
-//                    new MyStringSerializer();
-//            Repository.
-//                    provideSerializer(serializer);
-
             long createdAt = System.currentTimeMillis();
             UserJava.Address address = new UserJava.Address("ыCity", "ыStreet", 10);
             UserJava.Company company = new UserJava.Company("ыMyComp", "ыR&D");
