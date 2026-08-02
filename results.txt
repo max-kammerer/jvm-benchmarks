@@ -14,7 +14,6 @@ VarHandleBenchmark.setInstanceFinalHandle  thrpt    5   341266,600 ± 48086,362 
 VarHandleBenchmark.setInstanceHandle       thrpt    5   350141,600 ±  1067,145  ops/ms
 
 
-
 Benchmark                                        Mode  Cnt        Score        Error   Units
 ReflectionBenchmark.directFieldAccess           thrpt    5  3455030,925 ± 334784,159  ops/ms
 ReflectionBenchmark.staticFinalReflection       thrpt    5  1652825,858 ± 157957,068  ops/ms
@@ -44,4 +43,14 @@ ReflectionBenchmark.setInstanceFinalReflection  thrpt    5   425694,033 ±  3879
 ReflectionBenchmark.setInstanceReflection       thrpt    5   433123,019 ±   1419,264  ops/ms
 
 
-Jackson, XStream, Kryo
+JDK 17
+Benchmark                                      Mode  Cnt        Score        Error   Units
+MethodReflectionBenchmark.directCall          thrpt    5  3491227,918 ± 196415,297  ops/ms
+MethodReflectionBenchmark.reflectionCall      thrpt    5   407536,219 ±   9403,983  ops/ms
+MethodReflectionBenchmark.reflectionFastCall  thrpt    5   420319,028 ±   3810,272  ops/ms
+
+JDK 17 (inflationThreshold = Integer.MAX_VALUE)
+Benchmark                                      Mode  Cnt        Score       Error   Units
+MethodReflectionBenchmark.directCall          thrpt    5  3498980,072 ± 43301,378  ops/ms
+MethodReflectionBenchmark.reflectionCall      thrpt    5    13994,452 ±   404,142  ops/ms
+MethodReflectionBenchmark.reflectionFastCall  thrpt    5    14035,300 ±   338,666  ops/ms
